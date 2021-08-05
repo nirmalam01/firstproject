@@ -1,9 +1,10 @@
-pipeline{
-  any agent{
-	stage("print"){
-		steps{
-			echo "Hello Devops"
-		} 				
+pipeline {
+  agent any
+       stages{
+  	stage("print"){
+	   steps{  
+	      echo "Hello Devops"
+	   } 				
 	}
-   }
+      }
 }
