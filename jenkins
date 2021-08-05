@@ -1,10 +1,15 @@
 pipeline {
   agent any
        stages{
-  	stage("print"){
+  	stage("Build"){
 	   steps{  
-	      echo "Hello Devops"
+	      echo "in build"
 	   } 				
 	}
+      stage("Test"){
+           steps{
+              echo "in build"
+          }
+        }
       }
 }
