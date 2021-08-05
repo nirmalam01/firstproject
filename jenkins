@@ -1,0 +1,9 @@
+pipeline{
+  any agent{
+	stage("print"){
+		steps{
+			echo "Hello Devops"
+		} 				
+	}
+   }
+}
